@@ -17,15 +17,19 @@ function indexReducer(index, action) {
 }
 
 export default function DisplayProvider({ children }) {
-	const [personnage, setPersonnage] = useState("Robert");
+	const [personnage, setPersonnage] = useState(localStorage.getItem("char") || "Robert");
 	const [displayLine, setDisplayLine] = useState(false);
-	const [index, dispatchIndex] = useReducer(indexReducer, 0);
+	const [index, dispatchIndex] = useReducer(indexReducer, Number(localStorage.getItem("page")) || 0);
 	const names = useMemo(() => characterNames(), []);
 	const lines = useMemo(() => getLines(personnage), [personnage]);
 	const lineCount = useMemo(() => Object.values(lines).length - 1, [lines]);
 
+	// Just in case
 	useEffect(() => setDisplayLine(false), [index]);
-	useEffect(() => dispatchIndex({ type: "set", index: 0 }), [personnage]);
+
+	// localStorage
+	useEffect(() => localStorage.setItem("page", index), [index]);
+	useEffect(() => localStorage.setItem("char", personnage), [personnage]);
 
 	return (
 		<DisplayContext.Provider
