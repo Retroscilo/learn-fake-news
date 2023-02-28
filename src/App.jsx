@@ -24,6 +24,9 @@ export default function App() {
 				palette: {
 					mode,
 				},
+				typography: {
+					fontFamily: "Ubuntu, sans-serif",
+				},
 			}),
 		[mode]
 	);

@@ -22,12 +22,15 @@ export default function DisplayProvider({ children }) {
 	const [index, dispatchIndex] = useReducer(indexReducer, 0);
 	const names = useMemo(() => characterNames(), []);
 	const lines = useMemo(() => getLines(personnage), [personnage]);
+	const lineCount = useMemo(() => Object.values(lines).length - 1, [lines]);
 
 	useEffect(() => setDisplayLine(false), [index]);
 	useEffect(() => dispatchIndex({ type: "set", index: 0 }), [personnage]);
 
 	return (
-		<DisplayContext.Provider value={{ personnage, setPersonnage, names, lines, displayLine, setDisplayLine, dispatchIndex, index }}>
+		<DisplayContext.Provider
+			value={{ personnage, setPersonnage, names, lines, displayLine, setDisplayLine, dispatchIndex, index, lineCount }}
+		>
 			{children}
 		</DisplayContext.Provider>
 	);
