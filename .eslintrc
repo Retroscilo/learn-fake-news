@@ -1,0 +1,39 @@
+{
+  "extends": "eslint:recommended",
+  "rules": {
+    "no-undef": "error"
+  },
+  "globals": {
+    "window": "readonly",
+    "document": "readonly"
+  },
+  "parserOptions": {
+    "ecmaVersion": 12
+  },
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "overrides": [
+    {
+      "files": [
+        "*.js"
+      ],
+      "rules": {
+        "no-console": "off",
+        "no-unused-vars": [
+          "warn",
+          {
+            "args": "none"
+          }
+        ]
+      }
+    }
+  ],
+  "ignorePatterns": [
+    "node_modules/",
+    "build/"
+  ],
+  "reportUnusedDisableDirectives": true
+}
