@@ -1,5 +1,5 @@
 import { Select, FormControl, InputLabel, MenuItem } from "@mui/material";
-import { useDisplayContext } from "./Manager";
+import { useDisplayContext } from "./context";
 
 const CharSelector = () => {
 	const { personnage, setPersonnage, names } = useDisplayContext();

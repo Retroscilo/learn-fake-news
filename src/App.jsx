@@ -33,11 +33,15 @@ export default function App() {
 			<ThemeProvider theme={theme}>
 				<CssBaseline />
 				<Display.Context>
-					<Stack sx={{ height: "100vh", maxHeight: "100vh", position: "relative", alignItems: "center" }} gap={4}>
+					<Stack
+						sx={{ height: "100vh", maxHeight: "-webkit-fill-available", position: "relative", alignItems: "center" }}
+						gap={4}
+					>
 						<AppBarWrapper />
 						<Display.CharSelector />
 						<Display.Lines sx={{ flexGrow: 2 }} />
-						<Display.Actions sx={{ mb: 2 }} />
+						<Display.Pagination />
+						<Display.Actions sx={{ mb: 3 }} />
 					</Stack>
 				</Display.Context>
 			</ThemeProvider>

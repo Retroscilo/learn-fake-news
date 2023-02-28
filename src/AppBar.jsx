@@ -3,9 +3,9 @@ import ColorSwitch from "./ColorSwitch";
 
 const AppBarWrapper = () => {
 	return (
-		<AppBar sx={{ justifyContent: "flex-end" }} position="relative">
+		<Box sx={{ width: "100%", display: "flex", justifyContent: "flex-end" }} position="relative">
 			<ColorSwitch />
-		</AppBar>
+		</Box>
 	);
 };
 
