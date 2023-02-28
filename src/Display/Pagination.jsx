@@ -1,6 +1,7 @@
 import { Button, Menu, MenuItem } from "@mui/material";
 import { useDisplayContext } from "./context";
 import { useState } from "react";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 const Pagination = () => {
 	const { lines, index, dispatchIndex, lineCount } = useDisplayContext();
@@ -13,6 +14,7 @@ const Pagination = () => {
 		setAnchorEl(null);
 		typeof index == "number" && dispatchIndex({ type: "set", index });
 	};
+
 	return (
 		<>
 			<Button
