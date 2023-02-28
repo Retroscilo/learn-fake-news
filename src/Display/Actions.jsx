@@ -5,16 +5,16 @@ import { Box, dividerClasses, IconButton } from "@mui/material";
 import { useDisplayContext } from "./Manager";
 import { useMemo } from "react";
 
-const Actions = () => {
-	const { dispatchIndex, setDisplayLine, index, lines } = useDisplayContext();
+const Actions = ({ ...props }) => {
+	const { dispatchIndex, setDisplayLine, index, lines, displayLine } = useDisplayContext();
 	const lineNumber = useMemo(() => Object.values(lines).length - 1, [lines]);
 	console.log(lines, lineNumber);
 	return (
-		<Box sx={{ display: "flex", gap: "7em" }}>
+		<Box {...props} sx={{ display: "flex", gap: "7em", ...props.sx }}>
 			<IconButton disabled={index === 0} onClick={() => dispatchIndex({ type: "decrement" })}>
 				<ArrowBackIcon />
 			</IconButton>
-			<IconButton onClick={() => setDisplayLine(true)}>
+			<IconButton disabled={displayLine} onClick={() => setDisplayLine(true)}>
 				<CheckIcon />
 			</IconButton>
 			<IconButton disabled={index === lineNumber} onClick={() => dispatchIndex({ type: "increment" })}>
