@@ -1,5 +1,5 @@
 import { createContext, useState, useMemo, useContext, useReducer, useEffect } from "react";
-import { getLines, characterNames } from "../parser";
+import { getLines, characterNames } from "../../lib/text/parser";
 
 const DisplayContext = createContext(null);
 

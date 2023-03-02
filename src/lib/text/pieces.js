@@ -1,5 +1,6 @@
+// @esl
 export default {
-	"fake-news": `
+  "fake-news": `
   Un bistrot. Derrière le comptoir Robert, le patron, feuillette un journal en pestant de
   temps en temps. Ginette, la patronne, essuie des verres. Deux jeunes, Nicky et
   Morgan, sont assis à une table devant un Coca. Ils portent des tee-shirts affichant
