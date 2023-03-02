@@ -5,6 +5,12 @@ export const ColorModeContext = React.createContext({
   toggleColorMode: () => {},
 });
 
+const getDesignTokens = (mode) => ({
+  palette: {
+    mode,
+  },
+});
+
 const Theme = ({ children }) => {
   const [mode, setMode] = React.useState("dark");
   const colorMode = React.useMemo(
@@ -16,28 +22,7 @@ const Theme = ({ children }) => {
     []
   );
 
-  const theme = React.useMemo(
-    () =>
-      createTheme({
-        palette: {
-          mode,
-          primary: {
-            main: "#332233",
-            light: "#fff",
-            dark: "000",
-          },
-          secondary: {
-            main: "#ff8c00",
-            light: "#ffd180",
-            dark: "#c75b00",
-          },
-        },
-        typography: {
-          fontFamily: "Ubuntu, sans-serif",
-        },
-      }),
-    [mode]
-  );
+  const theme = React.useMemo(() => createTheme(getDesignTokens(mode)), [mode]);
 
   return (
     <ColorModeContext.Provider value={colorMode}>

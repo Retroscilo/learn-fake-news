@@ -1,4 +1,4 @@
-import { Slider } from "@mui/material";
+import { Slider, Zoom, Box } from "@mui/material";
 import { useDisplayContext } from "../context";
 import { useState } from "react";
 import BookmarkIcon from "@mui/icons-material/Bookmark";
@@ -11,16 +11,21 @@ const Mark = ({ index }) => {
   const mobile = useMediaQuery((theme) => theme.breakpoints.down("sm"));
 
   return (
-    <BookmarkIcon
-      onMouseEnter={() => setIsHover(true)}
-      onMouseLeave={() => setIsHover(false)}
-      onClick={() => dispatchIndex({ type: "set", index })}
-      fontSize={mobile ? "small" : "medium"}
+    <Box
       sx={{
         transform: (isHover || markIndex === index) && "scale(1.4)",
         transition: "transform .2s ease",
       }}
-    />
+    >
+      <Zoom in easing="cubic-bezier(0.34, 1.56, 0.64, 1)">
+        <BookmarkIcon
+          onMouseEnter={() => setIsHover(true)}
+          onMouseLeave={() => setIsHover(false)}
+          onClick={() => dispatchIndex({ type: "set", index })}
+          fontSize={mobile ? "small" : "medium"}
+        />
+      </Zoom>
+    </Box>
   );
 };
 
