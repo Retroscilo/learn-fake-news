@@ -17,19 +17,19 @@ const Pagination = () => {
     <Slider
       step={1}
       marks={[
-        { value: 0, label: 1 },
+        { value: 1, label: 1 },
         ...(bookmarks?.map((mark) => ({
           value: mark,
-          label: <Mark index={mark + 1} />,
+          label: <Mark index={mark} />,
         })) || []),
         { value: lineCount, label: lineCount },
       ]}
       valueLabelDisplay="on"
       onChange={handleChange}
       sx={{ width: "80%", maxWidth: "800px" }}
-      value={index - 1}
+      value={index}
       max={lineCount}
-      min={0}
+      min={1}
     />
   );
 };

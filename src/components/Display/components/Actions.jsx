@@ -4,7 +4,6 @@ import CheckIcon from "@mui/icons-material/Check";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { Box, IconButton } from "@mui/material";
 import { useDisplayContext } from "../context";
-import { useMemo } from "react";
 import BookmarkAddIcon from "@mui/icons-material/BookmarkAdd";
 import BookmarkRemoveIcon from "@mui/icons-material/BookmarkRemove";
 import useBookmarks from "../../../lib/hooks/useBookmarks";
@@ -14,12 +13,11 @@ const Actions = ({ ...props }) => {
     dispatchIndex,
     setDisplayLine,
     index,
-    lines,
+    lineCount,
     displayLine,
     personnage,
   } = useDisplayContext();
   const { bookmarks, setBookmark, deleteBookmark } = useBookmarks(personnage);
-  const lineNumber = useMemo(() => Object.values(lines).length - 1, [lines]);
   const sm = useMediaQuery((theme) => theme.breakpoints.down("sm"));
   const xs = useMediaQuery("(max-width:550px)");
 
@@ -34,7 +32,7 @@ const Actions = ({ ...props }) => {
     >
       <IconButton
         size={sm ? "large" : "medium"}
-        disabled={index === 0}
+        disabled={index === 1}
         onClick={() => handleChange("decrement")}
       >
         <ArrowBackIcon />
@@ -63,7 +61,7 @@ const Actions = ({ ...props }) => {
       )}
       <IconButton
         size={sm ? "large" : "medium"}
-        disabled={index === lineNumber}
+        disabled={index === lineCount}
         onClick={() => handleChange("increment")}
       >
         <ArrowForwardIcon />
