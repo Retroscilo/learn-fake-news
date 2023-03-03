@@ -8,7 +8,7 @@ const CharSelector = () => {
   function handleChange(e) {
     setDisplayLine(false);
     setPersonnage(e.target.value);
-    dispatchIndex({ type: "set", index: 0 });
+    dispatchIndex({ type: "set", index: 1 });
   }
   return (
     <FormControl>

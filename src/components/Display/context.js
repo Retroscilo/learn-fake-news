@@ -30,7 +30,7 @@ export default function DisplayProvider({ children }) {
   const [displayLine, setDisplayLine] = useState(false);
   const [index, dispatchIndex] = useReducer(
     indexReducer,
-    Number(localStorage.getItem("page")) || 0
+    Number(localStorage.getItem("page")) || 1
   );
   const names = useMemo(() => characterNames(), []);
   const lines = useMemo(() => getLines(personnage), [personnage]);
