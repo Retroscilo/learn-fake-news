@@ -21,7 +21,7 @@ const Actions = ({ ...props }) => {
   const { bookmarks, setBookmark, deleteBookmark } = useBookmarks(personnage);
   const lineNumber = useMemo(() => Object.values(lines).length - 1, [lines]);
   const sm = useMediaQuery((theme) => theme.breakpoints.down("sm"));
-  const xs = useMediaQuery("(max-width:350px)");
+  const xs = useMediaQuery("(max-width:550px)");
 
   function handleChange(type) {
     setDisplayLine(false);
