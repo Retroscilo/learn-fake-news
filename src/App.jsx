@@ -12,7 +12,7 @@ export default function App() {
       <Display.Context>
         <Stack
           sx={{
-            height: "100vh",
+            height: "calc(var(--vh, 1vh) * 100)",
             maxHeight: "-webkit-fill-available",
             position: "relative",
             alignItems: "center",
