@@ -241,7 +241,7 @@ export default {
   Robert reprend sa lecture. Un titre à la une attire son attention.
   Robert – Ça alors...
   Claude – Quoi ?
-  Robert – C’est en première page, je ne l’avais même vu. En général, je regarde
+  Robert – C’est en première page, je ne l’avais même pas vu. En général, je regarde
   directement les faits divers.
   Jackie – Encore un homicide ?
   
@@ -293,9 +293,9 @@ export default {
   Jackie – Les Anglais...
   Ginette – Les Bretons...
   Claude – C’est pour moi, que tu dis ça ?
-  Robert – Tu es Breton, toi ?
-  Claude – Breton par ma mère.
-  Jackie – Et Auvergnat par un copain de son père.
+  Robert – Tu es Bretonne, toi ?
+  Claude – Bretonne par ma mère.
+  Jackie – Et Auvergnate par un copain de son père.
   Ginette remplit les verres.
   Ginette – Et voilà...
   Robert – Le pastaga, c’est bon pour tout.
@@ -502,7 +502,7 @@ export default {
   Robert – Et ce n’est pas non plus les clients que vous transportez qui vont se
   plaindre.
   Jackie – Ceux qu’on transporte, non, mais la famille... La semaine dernière, en
-  sortant de chez toi, ce con avait laissé ouvert le haillon à l’arrière du corbillard.
+  sortant de chez toi, cette conne avait laissée ouvert le haillon à l’arrière du corbillard.
   Robert – Et alors ?
   Jackie – On a perdu le cercueil dans un tournant.
   Robert – Ah merde...
@@ -528,7 +528,7 @@ export default {
   Claude – On a chanté la Marseillaise, c’est passé comme une lettre à la poste.
   Jackie – C’est un truc que j’ai appris, ça, dans le métier. Quand tu ne sais pas quoi
   dire, tu chantes la Marseillaise, ça met tout le monde d’accord.
-  Ginette – Eh ben... Quand c’est moi que vous transporterez, essayez au moins d’être
+  Robert – Eh ben... Quand c’est moi que vous transporterez, essayez au moins d’être
   à jeun.
   Claude – C’est promis.
   Claude et Jackie finissent leurs verres.
@@ -643,8 +643,7 @@ export default {
   court.
   Robert – Un peu...?
   Fred – Mais rassurez-vous, vous n’emménagerez pas à l’Élysée tout de suite.
-  Morgan – Pour quelques jours, vous n’êtes encore que le président élu...
-  Alex – Le président sortant expédiera les affaires courantes en attendant la passation
+  Alex – Pour quelques jours, vous n’êtes encore que le président élu...Le président sortant expédiera les affaires courantes en attendant la passation
   de pouvoir.
   Robert – Quelques jours, vous dites...? Combien ?
   Fred – Disons... dans une quinzaine.
@@ -900,7 +899,7 @@ export default {
   Robert – Bon, ce n’est pas le tout, mais c’est un bar, ici. Si vous voulez rester, il va
   falloir consommer.
   Ginette – Alors les croque-morts ? C’est pour une mise en bière ? Qu’est-ce que je
-  vous sers ? Une Mort Subite ?
+  vous sers ? Une Mort Subite ? *rires*
   Jackie – Mets-moi plutôt un perroquet, va.
   Claude – Une tomate, pour moi.
   Ginette les sert.
@@ -929,7 +928,7 @@ export default {
   Jackie – Alors, quelles sont les nouvelles aujourd’hui ? À moins que ce soit le
   journal de demain ?
   Claude – Qu’est-ce que t’en penses, Robert ? C’est le journal d’aujourd’hui ?
-  Robert – Non, c’est celui de la semaine prochaine, ducon.
+  Robert – Non, c’est celui de la semaine prochaine, duconne.
   Ginette – Tu voulais voir les résultats du loto politique ?
   Jackie – Je préfère lire la rubrique nécrologique. Pour faire mon planning...
   Elle feuillette le journal.
@@ -993,7 +992,7 @@ export default {
   Jackie – Tu ne fais pas de parapente ?
   Robert – Si, bien sûr. En soirée, surtout. Le matin, je préfère le surf ou le jet-ski.
   Claude – Non...?
-  Robert – Évidemment, bande de cons, que je ne fais pas de parapente ! Je ne sais
+  Robert – Évidemment, bande de connes, que je ne fais pas de parapente ! Je ne sais
   même pas ce que c’est !
   Ginette – C’est quoi, le parapente ?
   Jackie – C’est une sorte de voile que tu te mets sur le dos. Tu te lances dans le vide
@@ -1022,7 +1021,7 @@ export default {
   Ginette – Mais sinon tu te sens bien...?
   Robert – Pourquoi je ne me sentirais pas bien ?
   Ginette – Ben... Comme ils disent que tu es mort...
-  Jackie – Mais vous voyez bien que je ne suis pas mort !
+  Robert – Mais vous voyez bien que je ne suis pas mort !
   Ginette – Je ne sais pas...
   Claude – Il n’y a pas de fumée sans feu, c’est sûr...
   Jackie – Surtout quand il s’agit d’une incinération.
@@ -1114,7 +1113,7 @@ export default {
   Nicky – Bon, bon... Ce n’est pas grave... Excusez-nous...
   Morgan – On peut quand même avoir deux cocas ?
   Ginette – Du coca ?
-  Robert – Foutez-moi le camp d’ici avant que j’aille cherche mon fusil !
+  Robert – Foutez-moi le camp d’ici avant que j’aille chercher mon fusil !
   Nicky et Morgan sortent, interloqués.
   Jackie – Du parapente...
   Claude – Ils n’ont plus aucune limite.
@@ -1253,7 +1252,7 @@ export default {
   Claude et Jackie arrivent, avec un air de circonstances. Claude porte une écharpe
   tricolore de maire.
   Claude – Bonjour Ginette.
-  Ginette – Monsieur le maire. Madame la première adjointe.
+  Ginette – Madame la maire. Madame la première adjointe.
   Jackie – Oublie ça, va.
   Claude – Aujourd’hui on n’est plus des élus, on n’est plus des croque-morts...
   Jackie – On n’est même plus des clients.
